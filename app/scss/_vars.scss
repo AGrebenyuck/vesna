@@ -1,0 +1,53 @@
+//fonts
+
+%geometria-500{
+  font-family: 'Geometria',sans-serif;
+  font-weight: 500;
+}
+%noah-400{
+  font-family: 'Noah',sans-serif;
+  font-weight: 400;
+}
+%noahI-400{
+  font-family: 'Noah',sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+%noah-700{
+  font-family: 'Noah',sans-serif;
+  font-weight: 700;
+}
+%marck-400{
+  font-family: 'Marck',cursive;
+  font-weight: 400;
+}
+
+//colors
+
+$green: #545A2F;
+$grey: #99A18E;
+$brown: #63533E;
+$black: #1A1A18;
+
+//
+
+%btn{
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  background-color: $green;
+  transition: all .3s;
+  &:hover{
+    background-color: $grey;
+  }
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
