@@ -20,6 +20,9 @@
       top: -155px;
     }
   }
+  .scroll-top{
+    right: 50px;
+  }
 }
 
 @media (max-width: 1440px){
@@ -548,6 +551,17 @@
   .section-form{
     &__inner{
       padding: 72px 0px 47px;
+    }
+  }
+  .scroll-top{
+    right: 16px;
+    bottom: 27px;
+    width: 95px;
+    height: 95px;
+    svg{
+      width: 14px;
+      height: 20px;
+      margin-bottom: 8px;
     }
   }
 }
