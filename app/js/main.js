@@ -1,5 +1,24 @@
 $(function(){
 
+  $(".scroll-top").on("click", function (event) {
+		event.preventDefault();
+
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		
+		$('body,html').animate({scrollTop: top-100}, 1500);
+	});
+
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    
+    if(height > 1500 && $('.scroll-top').length > 0){
+      $('.scroll-top').addClass('scroll-top--active');
+    } else{
+      $('.scroll-top').removeClass('scroll-top--active');
+    }
+  });
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
   });

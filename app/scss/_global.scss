@@ -73,3 +73,37 @@ body{
     }
   }
 }
+
+.scroll-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 22px;
+  position: fixed;
+  right: 155px;
+  bottom: 100px;
+  background-color: #99A18E;
+  color: #fff;
+  z-index: 100;
+  transition: all .3s;
+  opacity: 0;
+  pointer-events: none;
+  &:hover{
+    background-color: $green;
+  }
+  svg{
+    margin-bottom: 11px;
+    path{
+      transition: all .3s;
+    }
+  }
+  &--active{
+    opacity: 1;
+    pointer-events: all;
+  }
+}
